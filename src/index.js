@@ -1,3 +1,5 @@
+//Array Spread Operator
+
 const calculateAverage = (avgType, ...numbers) => {
     let sum = 0
 
@@ -9,6 +11,7 @@ const calculateAverage = (avgType, ...numbers) => {
 
 // console.log(calculateAverage('grade', 0, 10, 1))
 
+//////Challenge Task
 const printTeam = (teamName, coach, ...players) => {
     players.forEach((player) => player)
 
@@ -36,6 +39,7 @@ newHouse.yearBuilt = 2020
 
 // console.log(house, newHouse)
 
+//////Challenge Task
 let person = {
     name: 'Nathan',
     age: 27
@@ -52,3 +56,24 @@ let overview = {
 }
 
 console.log(person, location, overview)
+
+//Destructuring
+
+const todo = {
+    id: 'asdefefjj3ijd3',
+    text: 'Pay the bills',
+    completed: false
+}
+
+// const text = todo.text
+// const completed = todo.completed
+
+//Using destructuring
+
+const { text:todoText, completed, details = 'No details provided', ...others } = todo
+
+console.log(todoText)
+console.log(completed)
+console.log(details, others) //spreading was used to copy the rest of the objects that
+                                //were not destructured to "others".
+
