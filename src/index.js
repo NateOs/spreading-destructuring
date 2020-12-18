@@ -77,3 +77,16 @@ console.log(completed)
 console.log(details, others) //spreading was used to copy the rest of the objects that
                                 //were not destructured to "others".
 
+
+//Array Destructuring
+const age = [65, 0, 13, 21]
+const [firstAge, secondAge] = age  // use comma ", ," to skip to item you want to destructure
+
+let item1 = age[0]
+let item2 = age[1]
+
+console.log(item1, item2)
+
+console.log(firstAge)
+console.log(secondAge)
+
